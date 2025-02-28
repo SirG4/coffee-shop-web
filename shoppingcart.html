@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="shoppingcart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>BEAN BOUTIQUE</h1>
+    </header>
+
+    <nav>
+        <a href="homepage.html"><button aria-label="Home">Home</button></a>
+        <a href="coffeesection.html"><button aria-label="Coffee Selection">Blends</button></a>
+        <a href="equipments.html"><button aria-label="Brewing Equipments">Equipments</button></a>
+        <a href="events.html"><button aria-label="Events and Workshops">Events</button></a>
+        <a href="offers.html"><button aria-label="Special Offers and Subscriptions">Offers</button></a>
+        
+    </nav>
+
+    <main>
+        <div class="cart-container">
+            <h1>Your Cart</h1>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <h2>Subtotal: <span class="sub-total" id="subtotal">£0.00</span></h2>
+                <button class="shoppingcart-btn"onclick="showPopup()" aria-label="Proceed to Checkout">Check Out</button>
+                <button class="clear-cart-btn" onclick="clearAll()">Clear Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="coupon-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup()">&times;</span>
+            <h2>Payment Portal</h2>
+            <p>Pay using UPI</p>
+            <input type="email" id="email" placeholder="Enter your UPI id" required>
+            <button onclick="submitEmail()">Pay now</button>
+        </div>
+      </div>
+      
+      <!-- Coupon Code Popup -->
+      <div id="coupon-code-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closeCouponCodePopup()">&times;</span>
+            <strong>Your Order ID</strong>
+            <p>#DJFBFIEI</p>
+            <h2 id="coupon-code">ORDER COMPLETED</h2>
+        </div>
+      </div>
+
+    <script src="cart.js"></script>
+    <script src="selection.js"></script>
+    <script src="order.js"></script>
+    <script src="equipments.js"></script>
+</body>
+</html>

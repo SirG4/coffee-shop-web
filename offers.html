@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offers And Subscriptions</title>
+  <link rel="stylesheet" href="offers.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>BEAN BOUTIQUE</h1>
+    <a href=" shoppingcart.html" class="cart-icon">&#x1F6D2;</a>
+  </header>
+
+  <nav>
+    <a href="homepage.html">
+      <button aria-label="Home">Home</button>
+    </a>
+    <a href="coffeesection.html">
+      <button aria-label="Coffee Selection">Blends</button>
+    </a>
+    <a href="equipments.html">
+      <button aria-label="Brewing Equipments">Equipments</button>
+    </a>
+    <a href="events.html">
+      <button aria-label="Events and Workshops">Events</button>
+    </a>
+   
+    <a href="offers.html">
+      <button aria-label="Special Offers and Subscriptions">Offers</button>
+    </a>
+
+    
+  </nav>
+
+  <section class="welcome">
+    <h2>Subscribe to Our Coffee Club!</h2>
+    <p>Join our Coffee Subscription service and enjoy freshly roasted beans delivered to your doorstep. Choose from a variety of blends and enjoy exclusive member benefits!</p>
+    </section>
+
+    <section class="subscription-section">
+      <h2>Subscription Plans</h2>
+      <p>Enjoy fresh beans delivered to your doorstep!</p>
+      <div class="subscription-plans" role="group" aria-labelledby="subscription-header">
+          <div class="plan">
+              <h3>Basic Plan</h3>
+              <p>Price: <strong>£300/month</strong></p>
+              <p>Get a monthly delivery of our best-selling coffee beans, freshly roasted and ready to brew. Perfect for casual coffee drinkers!</p>
+              <a onclick="showPopup()" class="add-to-cart" aria-label="Join the Basic Plan subscription">Subscribe Now</a>
+          </div>
+          <div class="plan">
+              <h3>Premium Plan</h3>
+              <p>Price: <strong>£600/month</strong></p>
+              <p>Enjoy exclusive blends and special roasts delivered every two weeks. Ideal for those who love to explore different flavors!</p>
+              <a onclick="showPopup()" class="add-to-cart" aria-label="Join the Premium Plan subscription">Subscribe Now</a>
+          </div>
+          <div class="plan">
+              <h3>Deluxe Plan</h3>
+              <p>Price: <strong>£800/month</strong></p>
+              <p>Receive a curated selection of our finest coffees every week, along with tasting notes and brewing tips. Perfect for the true coffee connoisseur!</p>
+              <a  onclick="showPopup()" class="add-to-cart" aria-label="Join the Deluxe Plan subscription">Subscribe Now</a>
+          </div>
+      </div>
+  </section>
+  
+  <section class="welcome">
+    <h2>Offers</h2>
+    <p><strong>Coupon code:</strong> Halloween30</p>
+    <p>Enjoy £30 off for halloween week!!!</p>
+    </section>
+
+<div class="gap"></div>
+
+
+ <div id="coupon-popup" class="popup">
+  <div class="popup-content">
+      <span class="close-button" onclick="closePopup()">&times;</span>
+      <h2>Subscribe</h2>
+      <h3>Pay using Card</h3>
+      <p>Card Number</p>
+      <input type="text" id="email" placeholder="Enter your card details" required>
+      <p>Cvv</p>
+      <input type="text" id="email" placeholder="Enter your cvv" required>
+      <button onclick="submitEmail()">Subscribe Now</button>
+  </div>
+</div>
+  
+
+  <div id="coupon-code-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-button" onclick="closeCouponCodePopup()">&times;</span>
+        <h2 id="coupon-code">Subscribed!</h2>
+        <p>Enjoy a new blend every month!</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <p>Contact Us</p>
+        <p>Email: contact@beanboutique.com</p>
+        <p>Phone: 999999999</p>
+        <p>Address: Shop no.34, Bandra(W)</p>
+      </div>
+
+      <div class="footer-social">
+        <p>Find Us</p>
+        <a href="instagram_page" target="_blank">
+          <img src="coffeephotos/insta.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="maps_location" target="_blank">
+          <img src="coffeephotos/googlemaps.png" alt="Google Maps" class="social-icon">
+        </a>
+        <a href="twitter_page" target="_blank">
+          <img src="coffeephotos/twitter.png" alt="X" class="social-icon">
+        </a>
+      </div>
+    </div>
+    <div class="rights">
+      <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="subscribe.js"></script>
+
+</body>
+</html>

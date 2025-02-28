@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <link rel="stylesheet" href="events.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>BEAN BOUTIQUE</h1>
+    <a href=" shoppingcart.html" class="cart-icon">&#x1F6D2;</a>
+  </header>
+
+  <nav>
+    <a href="homepage.html">
+    <button aria-label="Home">Home</button> </a>
+
+    <a href="coffeesection.html">
+    <button aria-label="Coffee Selection">Blends</button> </a>
+
+    <a href="equipments.html">
+    <button aria-label="Brewing Equipments">Equipments</button></a>
+
+    <a href="events.html">
+    <button aria-label="Events and Workshops">Events</button></a>
+
+    <a href="offers.html">
+    <button aria-label="Special Offers and Subscriptions">Offers</button></a>
+    
+    
+    
+  </nav>
+
+<section class="welcome">
+  <h2>Events and Workshops</h2>
+  <p>Join us for our exciting events and workshops. Learn new brewing techniques, meet fellow coffee lovers, and discover the art of coffee making at Bean Boutique.</p>
+</section>
+  
+<section class="equipment-section">
+  <h2>Upcoming Events</h2>
+  <div class="event-item upcoming">
+    <img src="https://images.pexels.com/photos/22687037/pexels-photo-22687037/free-photo-of-person-holding-spoon-over-cups.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Espresso Tasting">
+    <div class="event-info">
+      <h3>Espresso Tasting</h3>
+      <p>Date: October 25, 2024</p>
+      <p>Explore the rich flavors of different espresso beans from around the world. This tasting session is a must-attend for espresso enthusiasts.</p>
+      <a  onclick="showPopup()" class="join-us-button">Join Us</a> 
+    </div>
+  </div>
+
+  <div class="event-item upcoming">
+    <img src="https://images.pexels.com/photos/3752647/pexels-photo-3752647.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cold Brew Masterclass">
+    <div class="event-info">
+      <h3>Cold Brew Masterclass</h3>
+      <p>Date: November 1, 2024</p>
+      <p>Discover the secrets to making the perfect cold brew at home. Our experts will guide you through the process step by step.</p>
+      <a  onclick="showPopup()" class="join-us-button">Join Us</a>
+    </div>
+  </div>
+
+  <div class="event-item upcoming">
+    <img src="https://images.pexels.com/photos/162766/table-dessert-coffee-on-the-table-162766.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Coffee and Dessert Pairing">
+    <div class="event-info">
+      <h3>Coffee and Dessert Pairing</h3>
+      <p>Date: November 10, 2024</p>
+      <p>Indulge in the perfect pairing of coffee and desserts. Learn how to match different coffee blends with delicious treats.</p>
+      <a  onclick="showPopup()" class="join-us-button">Join Us</a> 
+    </div>
+  </div>
+
+  <h2>Completed Events</h2>
+  <div class="event-item completed">
+    <img src="https://images.pexels.com/photos/2159062/pexels-photo-2159062.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pour-Over Brew Basics">
+    <div class="event-info">
+      <h3>Pour-Over Brew Basics</h3>
+      <p>Date: September 25, 2024</p>
+      <p>This hands-on workshop covered the fundamentals of the pour-over brewing method, giving attendees a deep understanding of the technique.</p>
+      <a href="Istagram_link" class="highlights-button">Highlights</a> 
+    </div>
+  </div>
+
+  <div class="event-item completed">
+    <img src="https://images.pexels.com/photos/13736097/pexels-photo-13736097.jpeg?auto=compress&cs=tinysrgb&w=600" alt="French Press Mastery">
+    <div class="event-info">
+      <h3>French Press Mastery</h3>
+      <p>Date: September 10, 2024</p>
+      <p>Attendees learned how to brew a bold and rich cup of coffee using the French Press, mastering the balance between grind size and brew time.</p>
+      <a href="Instagram_link" class="highlights-button">Highlights</a> 
+    </div>
+  </div>
+</section>
+
+
+<div id="coupon-popup" class="popup">
+  <div class="popup-content">
+      <span class="close-button" onclick="closePopup()">&times;</span>
+      <h2>Join Now</h2>
+      <p>Name</p>
+      <input type="text" id="email" placeholder="Enter your Name" required>
+      <button onclick="submitEmail()">Register</button>
+  </div>
+</div>
+  
+
+  <div id="coupon-code-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-button" onclick="closeCouponCodePopup()">&times;</span>
+        <h2 id="coupon-code">Joined!!!</h2>
+    
+    </div>
+  </div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: contact@beanboutique.com</p>
+      <p>Phone: 999999999</p>
+      <p>Address: Shop no.34, Bandra(W)</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Find Us</h3>
+      <a href="instagram_page" target="_blank">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/tBxa1IFcTQH.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="maps_location" target="_blank">
+        <img src="https://lh3.googleusercontent.com/9tLfTpdILdHDAvGrRm7GdbjWdpbWSMOa0csoQ8pUba9tLP8tq7M4Quks1xuMQAVnAxVfryiDXRzZ-KDnkPv8Sm4g_YFom1ltQHjQ6Q" alt="Google Maps" class="social-icon">
+      </a>
+      <a href="twitter_page" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/100px-X_logo_2023.svg.png" alt="X" class="social-icon">
+      </a>
+    </div>
+  </div>
+  <div class="rights">
+    <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="subscribe.js"></script>
+
+</body>
+</html>

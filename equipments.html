@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipments</title>
+  <link rel="stylesheet" href="equipments.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>BEAN BOUTIQUE</h1>
+    <a href="shoppingcart.html" class="cart-icon">&#x1F6D2;</a>
+  </header>
+
+  <nav>
+    <a href="homepage.html"><button aria-label="Home">Home</button></a>
+    <a href="coffeesection.html"><button aria-label="Coffee Selection">Blends</button></a>
+    <a href="equipments.html"><button aria-label="Brewing Equipments">Equipments</button></a>
+    <a href="events.html"><button aria-label="Events and Workshops">Events</button></a>
+    <a href="offers.html"><button aria-label="Special Offers and Subscriptions">Offers</button></a>
+    <input  class="search-bar" aria-label="search bar" placeholder="Search">
+  </nav>
+
+  <section class="welcome">
+    <h2>Brewing Equipments</h2>
+    <p>We are equipped with a diverse range of brewing methods and equipment, from classic pour-over to state-of-the-art espresso machines. This allows us to craft a variety of coffee experiences tailored to your preferences.</p>
+  </section>
+
+  
+
+  <section class="equipment-section">
+   
+    <div class="partition"></div>
+
+    <div class="equipment-item left" id="product-10">
+      <div class="equipment-image-holder">
+        <img src="https://images.pexels.com/photos/2159062/pexels-photo-2159062.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pour-over Dripper">
+        <div class="usage-tip">Tip: Use a medium-fine grind for optimal extraction.</div>
+        <div class="equipment-footer">
+          <h3 class="product-name" id="product-name-10">Pour-over Dripper</h3>
+          <p>The Pour-over Dripper offers precise control over the brewing process, producing a clean, bright cup of coffee.</p>
+          <p class="price">£2000</p>
+          <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="equipment-item right" id="product-11">
+      <div class="equipment-image-holder">
+        <img src="https://images.pexels.com/photos/22703024/pexels-photo-22703024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="French Press">
+        <div class="usage-tip">Tip: Steep for 4 minutes for the best flavor.</div>
+        <div class="equipment-footer">
+          <h3 class="product-name" id="product-name-11">French Press</h3>
+          <p>Known for its rich flavor and full-bodied coffee, the French Press is perfect for those who love a bolder brew.</p>
+          <p class="price">£2500</p>
+          <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="equipment-item left" id="product-12">
+      <div class="equipment-image-holder">
+        <img src="https://images.pexels.com/photos/2074111/pexels-photo-2074111.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Aeropress">
+        <div class="usage-tip">Tip: Experiment with brew times for different flavors.</div>
+        <div class="equipment-footer">
+          <h3 class="product-name" id="product-name-12">Aeropress</h3>
+          <p>The Aeropress is a portable coffee maker that offers a smooth, full-flavored brew in just a minute.</p>
+          <p class="price">£1800</p>
+          <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="equipment-item right" id="product-13">
+      <div class="equipment-image-holder">
+        <img src="https://images.pexels.com/photos/2775827/pexels-photo-2775827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Espresso Machine">
+        <div class="usage-tip">Tip: Use freshly ground coffee for the best taste.</div>
+        <div class="equipment-footer">
+          <h3 class="product-name" id="product-name-13">Espresso Machine</h3>
+          <p>Our Espresso Machine brings the coffee shop experience to your home, with rich, aromatic espresso shots.</p>
+          <p class="price">£15000</p>
+          <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="equipment-item left" id="product-14">
+      <div class="equipment-image-holder">
+        <img src="https://images.pexels.com/photos/7487360/pexels-photo-7487360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Burr Grinder">
+        <div class="usage-tip">Tip: Adjust grind size based on brew method.</div>
+        <div class="equipment-footer">
+          <h3 class="product-name" id="product-name-14">Burr Grinder</h3>
+          <p>A Burr Grinder ensures consistent grind size, which is essential for brewing the perfect cup of coffee.</p>
+          <p class="price">£3000</p>
+          <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="equipment-item right" id="product-15">
+      <div class="equipment-image-holder">
+        <img src="https://images.pexels.com/photos/14679166/pexels-photo-14679166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gooseneck Kettle">
+        <div class="usage-tip">Tip: Use for controlled pouring in pour-over methods.</div>
+        <div class="equipment-footer">
+          <h3 class="product-name" id="product-name-15">Gooseneck Kettle</h3>
+          <p>The Gooseneck Kettle provides precise pouring control, which is ideal for pour-over coffee methods.</p>
+          <p class="price">£1500</p>
+          <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="equipment-item left" id="product-16">
+      <div class="equipment-image-holder">
+        <img src="https://images.pexels.com/photos/8873834/pexels-photo-8873834.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tamper">
+        <div class="usage-tip">Tip: Press evenly to ensure proper extraction.</div>
+        <div class="equipment-footer">
+          <h3 class="product-name" id="product-name-16">Tamper</h3>
+          <p>A Tamper is a must-have for evenly compressing coffee grounds for espresso, ensuring a consistent extraction.</p>
+          <p class="price">£500</p>
+          <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="message-box" >Item added to basket</div>
+    <div class="message-box2" >Item could not add to basket</div>
+
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: contact@beanboutique.com</p>
+        <p>Phone: 999999999</p>
+        <p>Address: Shop no.34, Bandra(W)</p>
+      </div>
+      <div class="footer-social">
+        <h3>Find Us</h3>
+        <a href="instagram_page" target="_blank"><img src="./coffeephotos/insta.png" alt="Instagram" class="social-icon"></a>
+        <a href="maps_location" target="_blank"><img src="https://lh3.googleusercontent.com/9tLfTpdILdHDAvGrRm7GdbjWdpbWSMOa0csoQ8pUba9tLP8tq7M4Quks1xuMQAVnAxVfryiDXRzZ-KDnkPv8Sm4g_YFom1ltQHjQ6Q" alt="Google Maps" class="social-icon"></a>
+        <a href="twitter_page" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/100px-X_logo_2023.svg.png" alt="X" class="social-icon"></a>
+      </div>
+    </div>
+    <div class="rights">
+      <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="equipments.js"></script>
+  <script src="cart.js"></script>
+
+</body>
+</html>

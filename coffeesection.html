@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coffeesection.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>Coffee selection</title>
+</head>
+
+<body>
+    <header>
+        <h1>BEAN BOUTIQUE</h1>
+        <a href="shoppingcart.html" class="cart-icon">&#x1F6D2;</a> 
+    </header>
+
+    <nav>
+        <a href="homepage.html"><button aria-label="Home">Home</button></a>
+        <a href="coffeesection.html"><button aria-label="Coffee Selection">Blends</button></a>
+        <a href="equipments.html"><button aria-label="Brewing Equipments">Equipments</button></a>
+        <a href="events.html"><button aria-label="Events and Workshops">Events</button></a>
+        <a href="offers.html"><button aria-label="Special Offers and Subscriptions">Offers</button></a>
+        <input  class="search-bar" aria-label="search bar" placeholder="Search">
+    </nav>
+
+    <section class="welcome">
+        <h2>Discover Our Exclusive Coffee Blends</h2>
+        <p>Each cup is a symphony of taste, meticulously balanced to deliver a rich, aromatic, and truly exceptional coffee experience.</p>
+    </section>
+    
+    <section class="blend-gallery">
+        <div class="blend-card" id="product-1">
+            <div class="blend-image-wrapper">
+                <img src="https://storage.googleapis.com/a1aa/image/Pf18D3z1ZpS3PKi7QyNwer1s47fjulv3NuS5G07Covky08GnA.jpg" alt="Blend 1" class="blend-image">
+                <div class="blend-info">
+                    <p>A bold and flavorful blend of Italian beans, inspired by the rich coffee culture of Naples.</p>
+                    <p><strong>Brewing Methods:</strong> Espresso, Moka Pot</p>
+                    <p><strong>Taste Notes:</strong> Dark chocolate, caramel, subtle spice</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <p class = "product-name" id="product-name-1">Espresso Napoli</p>
+                <p class="price">£349</p>
+                <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="blend-card" id="product-2">
+            <div class="blend-image-wrapper">
+                <img src="https://images.pexels.com/photos/28797768/pexels-photo-28797768.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Blend 2" class="blend-image">
+                <div class="blend-info">
+                    <p>A full-bodied coffee with a low acidity and a rich, earthy flavor profile.</p>
+                    <p><strong>Brewing Methods:</strong> French Press, Pour Over</p>
+                    <p><strong>Taste Notes:</strong> Cocoa, berry, earthy undertones</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <p class = "product-name" id="product-name-2">Ethiopian Yirgacheffe</p>
+                <p class="price">£349</p>
+                <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="blend-card" id="product-3">
+            <div class="blend-image-wrapper">
+                <img src="https://images.pexels.com/photos/28797764/pexels-photo-28797764.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Blend 3" class="blend-image">
+                <div class="blend-info">
+                    <p>A medium-bodied coffee with a balanced flavor profile, featuring notes of chocolate and caramel.</p>
+                    <p><strong>Brewing Methods:</strong> Drip Coffee, Aeropress</p>
+                    <p><strong>Taste Notes:</strong> Milk chocolate, caramel, nutty finish</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <p class = "product-name" id="product-name-3">Costa Rican Tarrazu</p>
+                <p class="price">£349</p>
+                <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="blend-card" id="product-4">
+            <div class="blend-image-wrapper">
+                <img src="https://images.pexels.com/photos/28797767/pexels-photo-28797767.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Blend 4" class="blend-image">
+                <div class="blend-info">
+                    <p>A medium-bodied coffee with a rich, nutty flavor and a hint of chocolate.</p>
+                    <p><strong>Brewing Methods:</strong> Pour Over, French Press</p>
+                    <p><strong>Taste Notes:</strong> Hazelnut, chocolate, smooth finish</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <p class = "product-name" id="product-name-4">Guatemalan Antigua</p>
+                <p  class="price">£349</p>
+                <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="blend-card" id="product-5">
+            <div class="blend-image-wrapper">
+                <img src="https://images.pexels.com/photos/28797770/pexels-photo-28797770.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Blend 5" class="blend-image">
+                <div class="blend-info">
+                    <p>A full-bodied coffee with a low acidity and a smooth, chocolatey flavor.</p>
+                    <p><strong>Brewing Methods:</strong> Espresso, Cold Brew</p>
+                    <p><strong>Taste Notes:</strong> Dark chocolate, toffee, creamy</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <p class = "product-name" id="product-name-5">Brazilian Cerrado</p>
+                <p class="price">£349</p>
+                <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="blend-card" id="product-6">
+            <div class="blend-image-wrapper">
+                <img src="https://images.pexels.com/photos/28797766/pexels-photo-28797766.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Blend 6" class="blend-image">
+                <div class="blend-info">
+                    <p>A medium-bodied coffee with a balanced flavor profile, featuring notes of caramel and nuts.</p>
+                    <p><strong>Brewing Methods:</strong> Drip Coffee, French Press</p>
+                    <p><strong>Taste Notes:</strong> Caramel, almond, smooth finish</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <p class = "product-name" id="product-name-6">Colombian Supremo</p>
+                <p class="price">£349</p>
+                <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="blend-card" id="product-7">
+            <div class="blend-image-wrapper">
+                <img src="https://images.pexels.com/photos/28797769/pexels-photo-28797769.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Blend 7" class="blend-image">
+                <div class="blend-info">
+                    <p>A full-bodied coffee with a high caffeine content and a strong, bitter flavor.</p>
+                    <p><strong>Brewing Methods:</strong> Espresso, Moka Pot</p>
+                    <p><strong>Taste Notes:</strong> Dark chocolate, bitter, earthy</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <p class = "product-name" id="product-name-7">Vietnamese Robusta</p>
+                <p class="price">£349</p>
+                <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="blend-card" id="product-8">
+            <div class="blend-image-wrapper">
+                <img src="https://images.pexels.com/photos/28797771/pexels-photo-28797771.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Blend 8" class="blend-image">
+                <div class="blend-info">
+                    <p>A medium-bodied coffee with a bright acidity and a fruity flavor profile.</p>
+                    <p><strong>Brewing Methods:</strong> Pour Over, Aeropress</p>
+                    <p><strong>Taste Notes:</strong> Citrus, berry, floral notes</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <p class = "product-name" id="product-name-8">Kenyan AA</p>
+                <p class="price">£349</p>
+                <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="blend-card" id="product-9">
+            <div class="blend-image-wrapper">
+                <img src="https://images.pexels.com/photos/28797767/pexels-photo-28797767.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Blend 9" class="blend-image">
+                <div class="blend-info">
+                    <p>A harmonious blend of Italian and Ethiopian beans, offering a robust flavor profile.</p>
+                    <p><strong>Brewing Methods:</strong> Espresso, French Press</p>
+                    <p><strong>Taste Notes:</strong> Rich, fruity, complex</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <p class = "product-name" id="product-name-9">Espresso Sunrise</p>
+                <p class="price">£349</p>
+                <button class="add-to-cart" onclick="add_to_basket(event)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="message-box" >Item added to basket</div>
+        <div class="message-box2" >Item could not add to basket</div>
+
+    </section>
+
+   
+
+    <footer>
+        <div class="footer-content">
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: contact@beanboutique.com</p>
+            <p>Phone: 999999999</p>
+            <p>Address: Shop no.34, Bandra(W)</p>
+          </div>
+
+          <div class="footer-social">
+            <h3>Find Us</h3>
+            <a href="instagram_page" target="_blank"><img src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/tBxa1IFcTQH.png" alt="Instagram" class="social-icon"></a>
+            <a href="maps_location" target="_blank"><img src="https://lh3.googleusercontent.com/9tLfTpdILdHDAvGrRm7GdbjWdpbWSMOa0csoQ8pUba9tLP8tq7M4Quks1xuMQAVnAxVfryiDXRzZ-KDnkPv8Sm4g_YFom1ltQHjQ6Q" alt="Google Maps" class="social-icon"></a>
+            <a href="twitter_page" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/100px-X_logo_2023.svg.png" alt="X" class="social-icon"></a>
+          </div>
+        </div>
+        <div class="rights">
+          <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="selection.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

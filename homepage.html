@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>BEAN BOUTIQUE</h1>
+    <a href=" shoppingcart.html" class="cart-icon">&#x1F6D2;</a>
+  </header>
+<!--Version 2-->
+  <nav>
+    <a href="homepage.html">
+    <button aria-label="Home">Home</button>  </a>
+
+    <a href="coffeesection.html">
+    <button aria-label="Coffee Selection">Blends</button> </a>
+
+    <a href="equipments.html">
+    <button aria-label="Brewing Equipments">Equipments</button></a>
+
+    <a href="events.html">
+    <button aria-label="Events and Workshops">Events</button></a>
+
+    <a href="offers.html">
+    <button aria-label="Special Offers and Subscriptions">Offers</button></a>
+
+    
+  </nav>
+
+
+ <div id="coupon-popup" class="popup">
+  <div class="popup-content">
+      <span class="close-button" onclick="closePopup()">&times;</span>
+      <h2>Welcome!</h2>
+      <p>Sign Up to get 10% off your first order:</p>
+      <button onclick="showpopupsignup()">Sign Up</button>
+  </div>
+</div>
+
+<div id="coupon-popup-signup" class="popup">
+  <div class="popup-content">
+      <span class="close-button" onclick="closePopup1()">&times;</span>
+      <h2>Sign Up</h2>
+      <p>Username:</p>
+      <input type="text" id="username" placeholder="Enter your username" required>
+      <p>Email:</p>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <p>Password:</p>
+      <input type="text" id="password" placeholder="Password" required>
+      <button onclick="submitEmail(); closePopup1()">Sign Up</button>
+  </div>
+</div>
+
+<div id="coupon-code-popup" class="popup">
+  <div class="popup-content">
+      <span class="close-button" onclick="closeCouponCodePopup()">&times;</span>
+      <strong>Your Coupon Code</strong>
+      <p>Use this code at  shoppingcart:</p>
+      <h2 id="coupon-code">WELCOME10</h2>
+  </div>
+</div>
+
+
+  <section class="welcome">
+    <h2>Welcome to Bean Boutique!</h2>
+    <p>At Bean Boutique, we're passionate about crafting exceptional coffee experiences and fostering a vibrant community. We strive to elevate the local coffee culture by sourcing the finest beans, roasting them to perfection, and providing a welcoming atmosphere where customers can savor every sip.</p>
+  </section>
+
+  <section class="image-story">
+    <div class="image-slider1">
+      <img src="coffeephotos/homeimg1.png" alt="Brewing equipment">
+      <img src="coffeephotos/homeimg2.png" alt="People enjoying coffee">
+      <img src="coffeephotos/homeing3.png" alt="Coffee beans being roasted">
+    </div>
+  
+    <div class="blend-of-the-month">
+      <div class="blend-image-wrapper">
+        <img src="https://images.pexels.com/photos/28797768/pexels-photo-28797768.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Blend of the Month" class="blend-image">
+        <div class="blend-info">
+          <p>Espresso Napoli</p>
+          <p> A bold and flavorful blend of Italian beans, inspired by the rich coffee culture of Naples</p>
+        </div>
+      </div>
+     
+      <div class="blend-footer">
+        <p>Blend of the Month</p>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="history">
+    <h2>Our Story</h2>
+    <p>Bean Boutique was founded in 2020 with a passion for coffee and a commitment to quality. Our journey began in a small corner of the city, where we roasted our first batch of beans and brewed our first cup. Since then, we've grown into a beloved local coffee shop, sourcing the finest beans from around the world and perfecting our craft. We believe in creating a warm, inviting atmosphere where everyone can come together to enjoy great coffee and make lasting memories.</p>
+  </section>
+
+  <section class="slideshow-container">
+    <div class="top-seller-slideshow">
+      <h2>Top Sellers</h2>
+      <div class="image-slider2">
+          <img src="coffeephotos/ehtiopianen.png" alt="Ethiopian yirgacheffe">
+          <img src="coffeephotos/costaen.png" alt="costarican tarrazu">
+          <img src="coffeephotos/antiguaen.png" alt="guatemalan antigua">
+      </div>
+      <div class="slideshow-footer">
+        <p>Discover our best-selling blends loved by our community!</p>
+      </div>
+    </div>
+  
+    <div class="weekly-events-slideshow">
+      <h2>Weekly Events</h2>
+      <div class="image-slider3">
+          <img src="coffeephotos/livemusic.png" alt="Live Music Event">
+          <img src="coffeephotos/coffeetasting.png" alt="Coffee Tasting Event">
+          <img src="coffeephotos/comgathering.png" alt="Community Gathering">
+      </div>
+      <div class="slideshow-footer">
+        <p>Join us for exciting events every week!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: contact@beanboutique.com</p>
+        <p>Phone: 999999999</p>
+        <p>Address: Shop no.34, Bandra(W)</p>
+      </div>
+  
+      <div class="footer-social">
+        <h3>Find Us</h3>
+        <a href="instagram_page" target="_blank">
+          <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/tBxa1IFcTQH.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="maps_location" target="_blank">
+          <img src="https://lh3.googleusercontent.com/9tLfTpdILdHDAvGrRm7GdbjWdpbWSMOa0csoQ8pUba9tLP8tq7M4Quks1xuMQAVnAxVfryiDXRzZ-KDnkPv8Sm4g_YFom1ltQHjQ6Q" alt="Google Maps" class="social-icon">
+        </a>
+        <a href="twitter_page" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/100px-X_logo_2023.svg.png" alt="X" class="social-icon">
+        </a>
+
+      
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120714.36759732652!2d72.84654079999999!3d19.00544000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1730175923230!5m2!1sen!2sin" 
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+  </div>
+
+      </div>
+    </div>
+    <div class="rights">
+      <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="homepage.js"></script>
+</body>
+</html>
