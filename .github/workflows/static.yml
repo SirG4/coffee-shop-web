@@ -26,7 +26,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ homepage.html }}
+      url: ${{ https://github.com/SirG4/coffee-shop-web/blob/6a93f44d55f293c5f58283f6fe4ad2a1b2e9cf17/homepage.html }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
